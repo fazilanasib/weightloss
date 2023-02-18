@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=>, initial-scale=1.0" />
+    <title>Weight-loss Tips and Tricks</title>
+    <style>
+      body {
+        background: #0c0c74;
+      }
+      div {
+        background: #aff8f7;
+        margin: 30px 150px auto;
+        padding: 30px;
+      }
+      h1 {
+        color: #1c1c97;
+        text-align: center;
+        font-size: 30px;
+        display: block;
+        margin: 18px;
+        padding: 10px;
+      }
+
+      h2 {
+        text-align: center;
+        color: #1c1c97;
+        font-weight: bold;
+        display: block;
+        margin: 0 auto;
+      }
+      span {
+        text-align: center;
+        display: block;
+        margin: 10px;
+      }
+      img {
+        margin: 10px;
+        border: 3px solid #0c0c74;
+        border-radius: 10px;
+      }
+      p {
+        display: block;
+        margin: 30px auto;
+        font-size: 18px;
+        font-weight: 500;
+        font-family: "Lucida Console", "Courier New", monospace;
+        line-height: 20px;
+      }
+      ul {
+        display: block;
+        margin: 10px auto;
+        font-size: 18px;
+        line-height: 20px;
+        font-weight: 500;
+        font-family: "Lucida Console", "Courier New", monospace;
+      }
+      strong {
+        text-decoration: underline;
+      }
+      .calculator {
+        color: #1c1c97;
+      }
+      h3 {
+        text-align: center;
+        color: #1c1c97;
+        border: 2px solid #1c1c97;
+        border-radius: 10px;
+        font-size: 30px;
+      }
+      button {
+        color: #aff8f7;
+        text-align: center;
+        font-size: 40px;
+        display: block;
+        margin: 50px auto;
+        padding: 15px 20px;
+        background: #1c1c97;
+        border: 2px solid #1c1c97;
+        border-radius: 10px;
+        box-shadow: 2px 5px 5px rgb(0 0 0 / 20%);
+        transition: all 200ms ease-in-out;
+      }
+      button:hover {
+        background: transparent;
+        color: #1c1c97;
+        cursor: pointer;
+      }
+      h4 {
+        text-align: center;
+        margin: 0 auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1>Weightloss Tips and Tricks</h1>
+      <h2><em>By Fazila Nasib</em></h2>
+      <hr />
+      <span>
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/057/425/original/healthy_food.jpeg?1670614257"
+          width="41%" />
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/057/427/original/Women_exercising.jpeg?1670614716"
+          width="37.5%" />
+      </span>
+      <hr />
+      <p>
+        There are many ways to lose weight. Some have tried the keto diet,
+        others have tried the atkins diet. People also juice to get all their
+        nutrients in. There are many fad diets people decide to start their
+        weightloss journey with because they want an easy way out. A lot have
+        been successful in losing those extra pounds. However, none of them are
+        sustainable. I am here to tell you that there aren't really any tricks
+        to losing weight. Let me show you the two main aspects to losing weight
+        you have to work hard on:
+      </p>
+
+      <ul>
+        <li>
+          <strong>Calorie Deficit:</strong> This means you have to have a
+          certain amount of calories for you to lose weight. Every single day,
+          you have to go in a deficit. This will help you lose the weight and
+          keep it off. To track how many calories you should have every day to
+          reach your goal weight, try a
+          <a
+            href="https://www.fatcalc.com/rwl"
+            target="_blank"
+            class="calculator">
+            calorie deficit calculator.
+          </a>
+        </li>
+        <br />
+        <li>
+          <strong>Excerise:</strong> For a more sustainable weightloss, working
+          out every single day even if its just for 30 minutes will keep the
+          extra pounds off. Slow, steady workouts are best because they are ones
+          you can do every day whether you are traveling, at work, at home, etc.
+        </li>
+      </ul>
+      <h3>👇 See if you qualify to subscribe to my newsletter 👇</h3>
+      <button>Subscribe</button>
+      <br />
+      <h4><em>Coded by Fazila Nasib</em></h4>
+    </div>
+    <script>
+      function subscriberInfo() {
+        let name = prompt("What is your first name?");
+        let age = prompt("How old are you?");
+        name = name.toUpperCase();
+
+        if (age >= 15) {
+          alert(`Congrats ${name}! You can subscribe!`);
+        } else {
+          alert(`Sorry ${name}, you are too young to subscribe! :(`);
+        }
+      }
+      let subEmail = document.querySelector("button");
+      subEmail.addEventListener("click", subscriberInfo);
+    </script>
+  </body>
+</html>
